@@ -1,0 +1,69 @@
+/* Reset de certains styles de base pour une meilleure compatibilité entre les navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1d4e89;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1d4e89;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+}
+
+.btn:not(:disabled):hover {
+    background-color: #163f6a;
+    transform: translateY(-2px);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+}
